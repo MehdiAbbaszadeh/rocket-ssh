@@ -1,6 +1,5 @@
 #!/bin/bash
 
- 
 userInputs(){
 
     echo -e "\n\n****** Welecome to installation of the Rocket SSH Panel ****** \n"
@@ -176,7 +175,7 @@ copyPanelRepo(){
         rm -rf /var/www/html/account
     fi
 
-   link=https://github.com/mahmoud-ap/rocket-ssh/raw/master/app.zip
+   link=https://github.com/69learn/rocket-shh-panel/raw/master/app.zip
 
     if [[ -n "$link" ]]; then
         rm -fr /var/www/html/update.zip
@@ -453,7 +452,7 @@ ENDOFFILE
 installationInfo(){
     clear
     echo -e "\n"
-    bannerText=$(curl -s https://raw.githubusercontent.com/mahmoud-ap/rocket-ssh/master/rocket-banner.txt)
+    bannerText=$(curl -s https://raw.githubusercontent.com/69learn/rocket-shh-panel/master/rocket-banner.txt)
     printf "%s" "$bannerText"
     echo -e "\n"
     printf "Panel Link : $httpProtcol://${ipv4}:$panelPort/login"
